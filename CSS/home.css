@@ -1,0 +1,99 @@
+body
+    {font-family: helvetica, sans-serif;
+background-color: #e6ffe6;
+color: firebrick;
+}
+
+p
+      {font-stretch: extra-expanded}
+ul
+    {list-style-type: none;
+    margin: px;
+    padding: 5px;
+    width: 125px;
+    
+    background-color: peachpuff;
+    text-align: ;
+    font-size: 15px}
+
+li a 
+    {display: block;
+     color: firebrick;
+    }
+li a:hover
+    {background-color: firebrick;
+    color: peachpuff}
+li a:visited
+     {display: block;
+     }
+#home 
+    {color: black;
+font-style: normal}
+
+.videos
+{text-align: center}
+
+/* First make sure the video thumbnail images are responsive. */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  /* 
+  This is the starting grid for each video with thumbnails 5 across for the largest screen size.
+  It's important to use percentages or there may be gaps on the right side of the page. 
+  */
+  .video {
+    background: peachpuff;
+    padding-bottom: 5px;
+    box-shadow: 0 5px 5px green(0, 0, 0, 0.15);
+    width: 31%; /* Thumbnails 5 across */
+    margin: 1%;
+    float: left;
+  text-align: center}
+
+   /* These keep the height of each video consistent between YouTube and Vimeo.
+   Each can have thumbnail sizes that vary by 1px and are likely break your layout. */
+  .video figure {
+    height: 0;
+    padding-bottom: 43%;
+
+  /* Media Queries - This is the responsive grid. */
+  @media (max-width: 1366px) {
+    .video {
+      width: 23%; /* Thumbnails 4 across */
+    }
+  }
+  @media (max-width: 1024px) {
+    .video {
+      width: 31.333%; /* Thumbnails 3 across */
+    }
+  }
+  @media (max-width: 600px) {
+    .video {
+      width: 48%; /* Thumbnails 2 across */
+    }
+  }
+  @media (max-width: 360px) {
+    .video {
+      display: block;
+      width: 96%; /* Single column view. */
+      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+      float: none;
+    }
+  
+
+  
+.video img {
+    width: 100%;
+    opacity: 1;
+  }
+ .video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }
+
+    
+      
+
+
+
