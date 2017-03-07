@@ -7,6 +7,44 @@
 <link REL=StyleSheet href="CSS/home.css" type="text/css">
 </head>
 <style>
+
+ html {
+	overflow: hidden;
+	touch-action: none;
+	content-zooming: none;
+}
+p
+    {
+        text-align: center;
+    }
+body {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: ;
+    letter-spacing: 3px;
+    column-count: 
+    
+}
+
+img {
+	position: absolute;
+	pointer-event: none;
+}
+
+div {
+	position: relative;
+	float: left;
+	width: calc(33.33vw - 25px);
+	height: calc(50vh - 30px);
+	margin: 10px;
+	overflow: hidden;
+	pointer-event: none;
+}   
+
+li
+    {letter-spacing: 5px}
    a 
     {display: block;
      color: firebrick;
@@ -24,12 +62,115 @@
 <ul>
 
   
- <li> <a href="Pages/time_based.html">t i m e &nbsp; b a s e d</a></li>
-<li><a href="Pages/2D3D.html">2 d / 3 d</a></li>
-<li><a href="Pages/Sketchbook.html">t h i n g s</a></li>
-<li><a href="/Pages/about.html">a b o u t</a></li>
+ <li> <a href="Pages/time_based.html">time&nbsp;based</a></li>
+<li><a href="Pages/Coding.html">coding</a></li>
+<li><a href="Pages/2D3D.html">2d/d</a></li>
+<li><a href="Pages/Sketchbook.html">things</a></li>
+<li><a href="/Pages/about.html">about</a></li>
 
 </ul>
-  
+
+stills from "you were younger underwater"    
+    
+<div><img src="2dmedia/running1.jpg"></div>
+     <div><img src="2dmedia/running2.jpg"></div>
+     <div><img src="2dmedia/running3.jpg"></div>
+     <div><img src="2dmedia/running4.jpg"></div>
+     <div><img src="2dmedia/running5.jpg"></div>
+     <div><img src="2dmedia/running6.jpg"></div>
+    <div><img src="2dmedia/running1.jpg"></div>
+     <div><img src="2dmedia/running2.jpg"></div>
+     <div><img src="2dmedia/running3.jpg"></div>
+     <div><img src="2dmedia/running4.jpg"></div>
+     <div><img src="2dmedia/running5.jpg"></div>
+     <div><img src="2dmedia/running6.jpg"></div>
+
+
+<script type="text/javascript">window.addEventListener('load', function() {
+
+	"use strict";
+
+	var panels = [];
+
+	function Pan(div) {
+
+		this.div = div;
+		this.img = div.firstChild;
+		this.iw = this.img.width;
+		this.ih = this.img.height;
+		this.cx = -this.iw / 5;
+		this.cy = -this.ih / 5;
+		this.t = Math.random() * 15;
+
+	}
+
+	Pan.prototype.anim = function() {
+
+		var x, y, nx, ny, mx, my;
+		var nw = this.div.offsetWidth;
+		var nh = this.div.offsetHeight;
+
+		if (pointer.target === this.img) {
+
+			nx = this.div.offsetLeft;
+			ny = this.div.offsetTop;
+			x = Math.max(-this.iw + nw, Math.min(10, (-(pointer.x - nx) * (this.iw - nw)) / nw));
+			y = Math.max(-this.ih + nh, Math.min(10, (-(pointer.y - ny) * (this.ih - nh)) / nh));
+
+		} else {
+
+			mx = (this.iw - nw) * .5;
+			my = (this.ih - nh) * .5;
+			x = -mx * (1 + Math.cos(2 * this.t));
+			y = -my * (1 + Math.sin(3 * this.t));
+
+		}
+
+		this.cx += (x - this.cx) * .5;
+		this.cy += (y - this.cy) * .5;
+
+		this.img.style.transform = 'translate3d(' + (this.cx) + 'px, ' + (this.cy) + 'px ,0)';
+
+		this.t += 0.003;
+
+	}
+
+	function run() {
+
+		requestAnimationFrame(run);
+		panels.forEach(function(p) {
+			p.anim();
+		});
+
+	}
+
+	var divs = document.querySelectorAll('div');
+	for (var i = 0, div; div = divs[i]; i++) {
+		panels.push(new Pan(div));
+	}
+
+	var pointer = {
+		x: 0,
+		y: 0,
+		target: null,
+		move: function(e) {
+			var touchMode = e.targetTouches,
+				pointer;
+			if (touchMode) {
+				e.preventDefault();
+				pointer = touchMode[0];
+			} else pointer = e;
+			this.x = pointer.clientX;
+			this.y = pointer.clientY;
+			this.target = e.target;
+		}
+	};
+	window.addEventListener('mousemove', pointer.move.bind(pointer), true);
+	document.body.addEventListener('touchmove', pointer.move.bind(pointer), true);
+
+	run();
+
+});
+    </script> 
 </body>
 </html>
