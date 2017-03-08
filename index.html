@@ -1,18 +1,19 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<title>Fiona Penn</title>
-<meta charset="utf-8">
-<meta name="Fiona Penn's Portfolio Homepage">
-<link REL=StyleSheet href="CSS/home.css" type="text/css">
-</head>
-<style>
 
- html {
-	overflow: hidden;
-	touch-action: none;
-	content-zooming: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Visit to the Library</title>
+	
+	<link REL=StyleSheet href="../CSS/home.css" type="text/css">
+	<style>
+
+		
+
+	
 p
     {
         text-align: center;
@@ -28,20 +29,7 @@ body {
     
 }
 
-img {
-	position: absolute;
-	pointer-event: none;
-}
-
-div {
-	position: relative;
-	float: left;
-	width: calc(33.33vw - 25px);
-	height: calc(50vh - 30px);
-	margin: 10px;
-	overflow: hidden;
-	pointer-event: none;
-}   
+ 
 
 li
     {letter-spacing: 5px}
@@ -55,9 +43,186 @@ li
  a:visited
      {display: block;
      }
-</style>
+    
+
+		.list-one {
+
+		text-align: center}
+
+		.list-two {
+			text-indent: 0em;
+		}
+
+		.list-three {
+			text-indent: 0em;
+		}
+
+		.list-four {
+			text-indent: 0em;
+		}
+        
+        .button {
+  display: block;
+  border-radius: 2px;
+  background-color: peachpuff;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  font-family:;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: crosshair;
+  margin: auto;
+  position: relative;
+ 
+            letter-spacing: 4px
+}
+
+.button span {
+  cursor: crosshair;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// list one content
+			var one = [ 
+				"I walked up and down the aisle.<br>I stopped when I saw",
+				"You walked up and down the aisle.<br>You stopped when you saw",
+				"He walked up and down the aisle.<br>He stopped when he saw",
+				"She walked up and down the aisle.<br>She stopped when she saw",
+				"They walked up and down the aisle.<br>They stopped when they saw",
+				"We walked up and down the aisle.<br>We stopped when we saw",
+				
+			];
+
+			// list two content
+			var two = [
+				"a&nbsp;book&nbsp;called&nbsp;'Making&nbsp;Sense&nbsp;of&nbsp;Science'",
+				"a&nbsp;book&nbsp;called&nbsp;'Bond&nbsp;Guide'",
+				"a&nbsp;book&nbsp;called&nbsp;'Major&nbsp;Treaties&nbsp;of&nbsp;Modern&nbsp;History'",
+				"a&nbsp;book&nbsp;called&nbsp;'Tax&nbsp;Lawyers'",
+				"a&nbsp;book&nbsp;called&nbsp;'Science&nbsp;and&nbsp;Children'",
+				"a&nbsp;book&nbsp;called&nbsp;'Percussive&nbsp;Notes'",
+				"a&nbsp;book&nbsp;called&nbsp;'Nuclear&nbsp;Technology'",
+				"a&nbsp;book&nbsp;called&nbsp;'Modern&nbsp;Painters'",
+				"a&nbsp;book&nbsp;called&nbsp;'Modern&nbsp;Drummer'",
+				"a&nbsp;book&nbsp;called&nbsp;'Modern&nbsp;Age'",
+				"a&nbsp;book&nbsp;called&nbsp;'Modern&nbsp;Drama'",
+				"a&nbsp;book&nbsp;called&nbsp;'Metalsmithing'",
+				"a&nbsp;book&nbsp;called&nbsp;'Metropolis'",
+				"a&nbsp;book&nbsp;called&nbsp;'Journal&nbsp;of&nbsp;the&nbsp;Physical&nbsp;Society&nbsp;of&nbsp;Japan'",
+				"a&nbsp;book&nbsp;called&nbsp;'Journal&nbsp;of&nbsp;Applied&nbsp;Probability'",
+				"a&nbsp;book&nbsp;called&nbsp;'History&nbsp;of&nbsp;Political&nbsp;Thought'",
+				"a&nbsp;book&nbsp;called&nbsp;'Responsible&nbsp;Old&nbsp;Age&nbsp;and&nbsp;Death'",
+				"a&nbsp;book&nbsp;called&nbsp;'Dying&nbsp;Responsibly'",
+				
+			];
+
+			// list three content
+			var three = [
+				"and&nbsp;thought&nbsp;about&nbsp;drumming",
+				"and&nbsp;thought&nbsp;about&nbsp;the&nbsp;stock&nbsp;exchange",
+				"and&nbsp;thought&nbsp;about&nbsp;making&nbsp;peace",
+				"and&nbsp;thought&nbsp;about&nbsp;taxation",
+                "and&nbsp;thought&nbsp;about&nbsp;experimentation",
+                "and&nbsp;thought&nbsp;about&nbsp;jazz&nbsp;music",
+                "and&nbsp;thought&nbsp;about&nbsp;the&nbsp;apocalypse",
+                "and&nbsp;thought&nbsp;about&nbsp;oil&nbsp;paint",
+                "and&nbsp;thought&nbsp;about&nbsp;iron",
+                "and&nbsp;thought&nbsp;about&nbsp;the&nbsp;city",
+                "and&nbsp;thought&nbsp;about&nbsp;the&nbsp;capital",
+                "and&nbsp;thought&nbsp;about&nbsp;philosophy",
+                "and&nbsp;thought&nbsp;about&nbsp;cremation",
+                "and&nbsp;thought&nbsp;about&nbsp;morality"
+            
+            
+    
+    
+			];
+
+			// list four content
+			var four = [
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;losers&nbsp;and&nbsp;losers&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;winners&nbsp;and&nbsp;winners&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;mothers&nbsp;and&nbsp;mothers&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;fathers&nbsp;and&nbsp;fathers&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;women&nbsp;and&nbsp;women&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;men&nbsp;and&nbsp;men&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;children&nbsp;and&nbsp;children&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;adults&nbsp;and&nbsp;adults&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;villains&nbsp;and&nbsp;villains&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;heroes&nbsp;and&nbsp;heroes&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;geniuses&nbsp;and&nbsp;geniuses only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;idiots&nbsp;and&nbsp;idiots&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;enemies&nbsp;and&nbsp;enemies&nbsp;only",
+				"and&nbsp;decided&nbsp;it&nbsp;was&nbsp;for&nbsp;friends&nbsp;and&nbsp;friends&nbsp;only",
+				
+			];
+
+			// This is a very common randomizing function.
+			// It takes a list (array) and returns one at random.
+			function select_random(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+			function generate(){
+
+				// Select a random item from each list
+				var selected_one = select_random(one);
+				var selected_two = select_random(two);
+				var selected_three = select_random(three);
+				var selected_four = select_random(four);
+
+				// Take the selected (random) item from list and make it visible
+				$('.list-one').html(selected_one);
+				$('.list-two').html(selected_two);
+				$('.list-three').html(selected_three);
+			    $('.list-four').html(selected_four);
+
+			}
+
+			$('button').click(function(){
+				generate();
+			});
+
+			generate();
+			
+		});
+
+	</script>
+	
+
+    </head>
 <body>
-    <h1><a id="home" href="index.html">F I O N A &nbsp; P E N N</a></h1>
+ <h1><a id="home" href="index.html">F I O N A &nbsp; P E N N</a></h1>
 
 <ul>
 
@@ -70,107 +235,16 @@ li
 
 </ul>
 
-stills from "you were younger underwater"    
-    
-<div><img src="2dmedia/running1.jpg"></div>
-     <div><img src="2dmedia/running2.jpg"></div>
-     <div><img src="2dmedia/running3.jpg"></div>
-     <div><img src="2dmedia/running4.jpg"></div>
-     <div><img src="2dmedia/running5.jpg"></div>
-     <div><img src="2dmedia/running6.jpg"></div>
-    <div><img src="2dmedia/running1.jpg"></div>
-     <div><img src="2dmedia/running2.jpg"></div>
-     <div><img src="2dmedia/running3.jpg"></div>
-     <div><img src="2dmedia/running4.jpg"></div>
-     <div><img src="2dmedia/running5.jpg"></div>
-     <div><img src="2dmedia/running6.jpg"></div>
+<h2></h2>
+<dialog open class=shadowbox><span class="list-one"></span>
+	<div class="list-two"></div>
+	<div class="list-three"></div>
+    <div class="list-four"></div></dialog>
+    <br><br><br><br><br><br><br><br>
+<button class="button"><span>stroll</span></button>
 
+	
 
-<script type="text/javascript">window.addEventListener('load', function() {
-
-	"use strict";
-
-	var panels = [];
-
-	function Pan(div) {
-
-		this.div = div;
-		this.img = div.firstChild;
-		this.iw = this.img.width;
-		this.ih = this.img.height;
-		this.cx = -this.iw / 5;
-		this.cy = -this.ih / 5;
-		this.t = Math.random() * 15;
-
-	}
-
-	Pan.prototype.anim = function() {
-
-		var x, y, nx, ny, mx, my;
-		var nw = this.div.offsetWidth;
-		var nh = this.div.offsetHeight;
-
-		if (pointer.target === this.img) {
-
-			nx = this.div.offsetLeft;
-			ny = this.div.offsetTop;
-			x = Math.max(-this.iw + nw, Math.min(10, (-(pointer.x - nx) * (this.iw - nw)) / nw));
-			y = Math.max(-this.ih + nh, Math.min(10, (-(pointer.y - ny) * (this.ih - nh)) / nh));
-
-		} else {
-
-			mx = (this.iw - nw) * .5;
-			my = (this.ih - nh) * .5;
-			x = -mx * (1 + Math.cos(2 * this.t));
-			y = -my * (1 + Math.sin(3 * this.t));
-
-		}
-
-		this.cx += (x - this.cx) * .5;
-		this.cy += (y - this.cy) * .5;
-
-		this.img.style.transform = 'translate3d(' + (this.cx) + 'px, ' + (this.cy) + 'px ,0)';
-
-		this.t += 0.003;
-
-	}
-
-	function run() {
-
-		requestAnimationFrame(run);
-		panels.forEach(function(p) {
-			p.anim();
-		});
-
-	}
-
-	var divs = document.querySelectorAll('div');
-	for (var i = 0, div; div = divs[i]; i++) {
-		panels.push(new Pan(div));
-	}
-
-	var pointer = {
-		x: 0,
-		y: 0,
-		target: null,
-		move: function(e) {
-			var touchMode = e.targetTouches,
-				pointer;
-			if (touchMode) {
-				e.preventDefault();
-				pointer = touchMode[0];
-			} else pointer = e;
-			this.x = pointer.clientX;
-			this.y = pointer.clientY;
-			this.target = e.target;
-		}
-	};
-	window.addEventListener('mousemove', pointer.move.bind(pointer), true);
-	document.body.addEventListener('touchmove', pointer.move.bind(pointer), true);
-
-	run();
-
-});
-    </script> 
 </body>
+
 </html>
