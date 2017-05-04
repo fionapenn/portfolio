@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>flashes</title>
+  <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    </head>
+	<style>
+
+    body
+        {font-family: 'UnifrakturMaguntia', cursive;
+        background-color: black;
+        color: white;
+        cursor: crosshair}
+    h1
+        {position: fixed;
+        top: 50%;
+        left: 50%}
+    p
+           {font-family: 'Inknut Antiqua', serif;
+               font-size: 20px;
+               position: fixed;
+        top: 50%;
+        left: 80%} 
+/* unvisited link */
+a:link {
+    color: white; 
+    cursor: crosshair;
+    text-decoration: none
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    cursor: crosshair
+}
+
+/* mouse over link */
+a:hover {
+    text-shadow: 2px 2px red;
+    cursor: crosshair
+}
+
+/* selected link */
+a:active {
+    color: white;
+    cursor: crosshair
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+         .arrow
+        {font-size: 30px;
+            position: fixed;
+        top: 90%;
+        right: 5%}
+        form
+        {position: fixed;
+        top: 61%;
+        left: 50%;
+        font-family: 'Inknut Antiqua', serif;
+        }
+    </style>
+    <body>
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        
+        <source src="../Media/body.mov" type="video/mp4">
+       
+    </video>
+</div>
+
+<h1>that thing where they hand you an existence</h1>
+  
+    <a href="flash012.html" class="arrow">></a>     
+    </body>
