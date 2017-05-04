@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+   
     </head>
 	<style>
 
@@ -100,6 +101,8 @@ a:active {
         {font-family: 'Ewert', cursive;
         }
     </style>
+ 
+
     <body>
 
 <div class="fullscreen-bg">
@@ -111,12 +114,15 @@ a:active {
 </div>
 
 <h1 class="thanks">thank you angels</h1>
-       
-        
-        <form method="post" action="contact.php" >
-    <textarea name="message" value="Write a message for my angels..." >Write a message to my angels...</textarea><br>
-    <input type="submit" value="Send">
+ <br><br>      
+<form method="POST" name="contactform" action="contact-form-handler.php"> 
+<p>
+<textarea name="message">Write a message for my angels...</textarea>
+</p>
+<input type="submit" value="Submit"><br>
 </form>
   
-    <a href="flash012.html" class="arrow">></a>     
+   
+        
+   
     </body>
