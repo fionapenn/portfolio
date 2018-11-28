@@ -1,16 +1,166 @@
 body
     {font-family: helvetica, sans-serif;
 background-color: #e6ffe6;
-color: firebrick;
+
 }
+h1{text-decoration: underline}
+h2
+{text-align: center;
+color: firebrick}
+h3
+        {text-align: center}
+h4
+      {color: black;
+      font-size: 15px;
+          text-decoration: none 
+font-weight: normal;
+line-height: 1.5}
+
+.inprogress {text-decoration: none;
+font-weight: normal}
+
+h5
+{font-weight:normal;
+text-align: center}
+
+h6
+{font-weight: normal;
+font-size: 15px;
+text-align: center}
 
 p
-      {font-stretch: extra-expanded}
+      {font-stretch: extra-expanded;
+text-align: center}
+
+body {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: ;
+    letter-spacing: 1px;
+    column-count: 
+    
+}
+
+dialog
+{position: inherit}
+
+a 
+    {display: block;
+     color: firebrick;
+    text-decoration: none
+    }
+ a:hover
+    {background-color: firebrick;
+    color: peachpuff}
+ a:visited
+     {display: block;
+     }
+
+
+        
+        .button {
+  display: block;
+  border-radius: 2px;
+  background-color: peachpuff;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  font-family:;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: crosshair;
+  margin: auto;
+  position: relative;
+ 
+            letter-spacing: 4px
+}
+
+.button:active,
+.button:focus,
+.button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button span {
+  cursor: crosshair;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+        
+
+.description
+        {font-size: 12px}
+
+.column1 {
+    float: left;
+    width: 40%;
+    }
+    
+    .middlecolumn{}
+      
+.column2 {
+    float: right;
+    width: 40%;
+    align-content: center
+    }
+
+.column3 {
+    float: left;
+    width: 20%
+}
+
+.column4 {
+    float: right;
+    width: 80%;
+
+}
+
+.row:after {
+    content: "";
+   
+    clear: both;
+}
+    
+ .quote {background-color: peachpuff;
+    
+    font-size: 15px;
+    padding: 5px;
+    margin: 30px} 
+
+    .intro {margin: 30px;
+font-weight: 100px}
+
 ul
     {list-style-type: none;
     margin: px;
     padding: 5px;
-    width: 125px;
+    width: 200px;
     
     background-color: peachpuff;
     text-align: ;
@@ -29,7 +179,24 @@ li a:visited
 #home 
     {color: black;
 font-style: normal}
+        .codes {
+  display: block;
+  border-radius: 2px;
+  background-color: peachpuff;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  font-family:;
+  padding: 5px;
 
+  transition: all 0.5s;
+  cursor: crosshair;
+  margin: auto;
+  position: relative;
+ 
+            letter-spacing: 4px
+}
 .videos
 {text-align: center}
 
@@ -92,8 +259,8 @@ font-style: normal}
     opacity: 0.75;
   }
 
-    
-      
+
+      .quote {background-color: peachpuff}  
 
 
 
