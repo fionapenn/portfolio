@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Fiona Penn</title>
+<meta charset="utf-8">
+<meta name="Fiona Penn's Portfolio Homepage">
+<link REL=StyleSheet href="../CSS/home.css" type="text/css">
+</head>
+<style>
+</style>
+<body>
+    <h1><a id="home" href="../index.html">F I O N A &nbsp; P E N N</a></h1>
+
+<div class="row">
+<div class="column3">
+<ul>
+
+    <em>SELECTED WORKS</em> 
+ <div class="menu"><li> <a href="Pages/nicetoyourself.html">nice to yourself</a></li>
+     <li><a href="carving.html">carving</a></li>
+<li><a href="familyseries.html">familial series</a></li>
+
+<li><a href="../howikilledtheplants.html">how i killed the plants</a></li>
+     <li><a href="hahadissent.html">fire fighting</a></li>
+     <li><a href="sweetness.html">sweetness & decency</a></li>
+
+<br>
+     <em>CLIENT WORKS</em>
+     <li><a href="stolenstreets.html">stolen steps</a></li>
+     <li><a href="btsseries.html">behind the scenes series </a></li>
+   <li><a href="lpone.html">lp one</a></li>
+     <br>
+     <em>ADDITIONAL </em>
+     <li><a href="music.html">music</a></li>
+     <li><a href="https://globalgamejam.org/2018/games/lineman">game jam</a></li>
+     <li><a href="https://vimeo.com/fionapenn">vimeo</a></li>
+     <li><a href="about.html">about</a></li></div>
+
+</ul>
+    </div>
+    
+    <div class="column4">
+
+    <h2>LIVE MUSIC: enjoy</h2>
+    <h5>some live music made with processing & wekinator, played with a flashlight<br><br>2018</h5>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/fifipenn?ref_src=twsrc%5Etfw">@fifipenn</a> live music cast <a href="https://t.co/65UQbSBsgt">https://t.co/65UQbSBsgt</a></p>&mdash; fipenn (@fipenn4) <a href="https://twitter.com/fipenn4/status/1122971912739655680?ref_src=twsrc%5Etfw">April 29, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+    </div>
+    </div>
+
+</body>
+</html>
